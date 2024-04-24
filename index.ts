@@ -18,3 +18,11 @@ mongoose
     console.error("Couldn't connect to Mongo DB: ", err);
     process.exit(1);
   });
+
+mongoose.connection.on("disconnected", () => {
+  console.log("MongoDB disconnected");
+});
+
+mongoose.connection.on("connected", () => {
+  console.log("MongoDB is connected");
+});
