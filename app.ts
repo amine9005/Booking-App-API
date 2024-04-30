@@ -1,10 +1,12 @@
 import express, { Application } from "express";
 import HotelRouter from "./Routes/hotels.router";
+import AuthRouter from "./Routes/auth.router";
 
 function createServer() {
   const app: Application = express();
 
   app.use("/hotels", HotelRouter);
+  app.use("/auth", AuthRouter);
 
   app.use("*", (req, res) => {
     res.status(404).json({
