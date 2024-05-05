@@ -5,4 +5,12 @@ const login = async (req: Request, res: Response, next: NextFunction) => {
   return res.status(200).json({ message: "success" });
 };
 
-export default { login };
+const logout = async (req: Request, res: Response, next: NextFunction) => {
+  return res.status(200).json({ message: "success" });
+};
+
+const register = async (req: Request, res: Response, next: NextFunction) => {
+  return res.status(200).json({ message: "success" });
+};
+
+export default { login, logout, register };
