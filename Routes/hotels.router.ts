@@ -1,9 +1,10 @@
 import express, { Request, Response } from "express";
+import hotelsController from "../controllers/hotels.controller";
 
 const router = express.Router();
 
-router.post("/", (req: Request, res: Response) => {
-  res.status(200).json("Add Hotel Endpoint");
-});
+router.get("/", hotelsController.getAllHotels);
+router.get("/:id", hotelsController.getByID);
+router.get("/add/", hotelsController.addHotel);
 
 export default router;
