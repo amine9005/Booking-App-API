@@ -25,4 +25,4 @@ const getByAddress = async (
   return res.status(200).json({ message: "success" });
 };
 
-export default { getAllHotels, addHotel, getByID };
+export default { getAllHotels, addHotel, getByID, getByAddress };
