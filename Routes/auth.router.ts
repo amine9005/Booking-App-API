@@ -10,4 +10,5 @@ router.get("/", (req: Request, res: Response) => {
 router.get("/register", authController.register);
 router.get("/login", authController.login);
 router.get("/logout", authController.logout);
+router.get("/refresh", authController.refresh);
 export default router;
