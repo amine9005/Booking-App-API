@@ -8,5 +8,6 @@ router.get("/:id", hotelsController.getByID);
 router.get("/add/", hotelsController.addHotel);
 router.get("/getByAddress/:address", hotelsController.getByAddress);
 router.get("/getByZipCode/:zipCode", hotelsController.getByZipCode);
+router.get("/remove/:id", hotelsController.removeHotel);
 
 export default router;

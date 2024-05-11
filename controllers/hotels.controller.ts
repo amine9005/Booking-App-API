@@ -33,4 +33,15 @@ const getByZipCode = async (
   return res.status(200).json({ message: "success" });
 };
 
-export default { getAllHotels, addHotel, getByID, getByAddress, getByZipCode };
+const removeHotel = async (req: Request, res: Response, next: NextFunction) => {
+  return res.status(200).json({ message: "success" });
+};
+
+export default {
+  getAllHotels,
+  addHotel,
+  getByID,
+  getByAddress,
+  getByZipCode,
+  removeHotel,
+};
