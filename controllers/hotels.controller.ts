@@ -37,6 +37,10 @@ const removeHotel = async (req: Request, res: Response, next: NextFunction) => {
   return res.status(200).json({ message: "success" });
 };
 
+const editHotel = async (req: Request, res: Response, next: NextFunction) => {
+  return res.status(200).json({ message: "success" });
+};
+
 export default {
   getAllHotels,
   addHotel,
@@ -44,4 +48,5 @@ export default {
   getByAddress,
   getByZipCode,
   removeHotel,
+  editHotel,
 };
