@@ -8,6 +8,7 @@ router.get("/:id", hotelsController.getByID);
 router.get("/add/", hotelsController.addHotel);
 router.get("/getByAddress/:address", hotelsController.getByAddress);
 router.get("/getByZipCode/:zipCode", hotelsController.getByZipCode);
+router.get("/getByNumberOfRooms/:number", hotelsController.getByNumberOfRooms);
 router.get("/remove/:id", hotelsController.removeHotel);
 router.get("/edit/:id", hotelsController.editHotel);
 
