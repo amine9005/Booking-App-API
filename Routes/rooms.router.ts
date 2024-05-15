@@ -9,4 +9,6 @@ router.post("/", (req: Request, res: Response) => {
 
 router.get("/bedsNumber", roomsController.getNumberOfBeds);
 
+router.get("/bathsNumber", roomsController.getNumberOfBathrooms);
+
 export default router;
