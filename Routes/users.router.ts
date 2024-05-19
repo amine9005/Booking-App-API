@@ -1,12 +1,11 @@
 import express, { Request, Response } from "express";
+import usersController from "../controllers/users.controller";
 
 const router = express.Router();
 
 router.post("/", (req: Request, res: Response) => {
   res.status(200).json("users Endpoint");
 });
-router.post("/", (req: Request, res: Response) => {
-  res.status(200).json("users Endpoint");
-});
+router.post("/editPic", usersController.changePicture);
 
 export default router;
