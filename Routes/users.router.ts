@@ -7,5 +7,6 @@ router.post("/", (req: Request, res: Response) => {
   res.status(200).json("users Endpoint");
 });
 router.post("/editPic", usersController.changePicture);
+router.post("/editPic", usersController.changePicture);
 
 export default router;
