@@ -8,5 +8,6 @@ router.post("/", (req: Request, res: Response) => {
 });
 router.post("/editPic", usersController.changePicture);
 router.post("/editProfile", usersController.changeProfileInfo);
+router.post("/editProfile", usersController.changeProfileInfo);
 
 export default router;
