@@ -57,6 +57,14 @@ const addToReservations = async (
   return res.status(200).json({ message: "success" });
 };
 
+const cancelReservation = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  return res.status(200).json({ message: "success" });
+};
+
 export default {
   changePicture,
   changeProfileInfo,
@@ -66,4 +74,5 @@ export default {
   saveHotel,
   addToReservations,
   removeFromSaved,
+  cancelReservation,
 };
