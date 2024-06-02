@@ -25,6 +25,14 @@ const getSavedHotels = async (
   return res.status(200).json({ message: "success" });
 };
 
+const removeFromSavedHotels = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  return res.status(200).json({ message: "success" });
+};
+
 const getReservations = async (
   req: Request,
   res: Response,
@@ -75,4 +83,5 @@ export default {
   addToReservations,
   removeFromSaved,
   cancelReservation,
+  removeFromSavedHotels,
 };
