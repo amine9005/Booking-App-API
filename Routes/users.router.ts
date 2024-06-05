@@ -12,5 +12,6 @@ router.post("/Saved", usersController.changeProfileInfo);
 router.post("/reserved", usersController.changeProfileInfo);
 router.post("/cancelReservation", usersController.cancelReservation);
 router.get("/getSavedHotels", usersController.getSavedHotels);
+router.get("/getReservations", usersController.getReservations);
 
 export default router;
