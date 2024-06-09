@@ -9,7 +9,7 @@ router.post("/", (req: Request, res: Response) => {
 router.post("/editPic", usersController.changePicture);
 router.post("/editProfile", usersController.changeProfileInfo);
 router.post("/Saved", usersController.changeProfileInfo);
-router.post("/reserved", usersController.changeProfileInfo);
+router.post("/reserved", usersController.getReservations);
 router.post("/cancelReservation", usersController.cancelReservation);
 router.get("/getSavedHotels", usersController.getSavedHotels);
 router.get("/getReservations", usersController.getReservations);
