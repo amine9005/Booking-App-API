@@ -16,6 +16,5 @@ router.get("/getReservations", usersController.getReservations);
 router.get("/removeFromSaved", usersController.removeFromSaved);
 router.get("/addToReservations", usersController.addToReservations);
 router.get("/saveHotel", usersController.saveHotel);
-router.get("/saveHotel", usersController.saveHotel);
 
 export default router;
