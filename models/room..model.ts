@@ -1,7 +1,11 @@
 import mongoose from "mongoose";
 const { Schema } = mongoose;
 const RoomSchema = new mongoose.Schema({
-  phoneNumber2: {
+  NumberOfBeds: {
+    type: Number,
+    required: true,
+  },
+  NumberOfBaths: {
     type: Number,
     required: true,
   },
