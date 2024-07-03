@@ -9,6 +9,10 @@ const RoomSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  RoomNumber: {
+    type: Number,
+    required: true,
+  },
 });
 
 export default mongoose.model("Room", RoomSchema);
