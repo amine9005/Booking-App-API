@@ -13,6 +13,10 @@ const RoomSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  Status: {
+    type: String,
+    required: true,
+  },
 });
 
 export default mongoose.model("Room", RoomSchema);
