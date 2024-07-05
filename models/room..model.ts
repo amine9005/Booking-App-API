@@ -17,6 +17,10 @@ const RoomSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  Price: {
+    type: String,
+    required: true,
+  },
 });
 
 export default mongoose.model("Room", RoomSchema);
