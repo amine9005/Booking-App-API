@@ -14,7 +14,7 @@ const RoomSchema = new mongoose.Schema({
     required: true,
   },
   Status: {
-    type: String,
+    type: Array<String>,
     required: true,
   },
   Price: {
