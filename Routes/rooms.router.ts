@@ -7,7 +7,6 @@ router.post("/", (req: Request, res: Response) => {
   res.status(200).json("Add Room Endpoint");
 });
 
-router.get("/bedsNumber", roomsController.getNumberOfBeds);
-router.get("/bathsNumber", roomsController.getNumberOfBathrooms);
+router.get("/rooms", roomsController.getRooms);
 
 export default router;
