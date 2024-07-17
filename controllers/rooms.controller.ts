@@ -12,4 +12,9 @@ const addRoom = async (req: Request, res: Response, next: NextFunction) => {
 const editRoom = async (req: Request, res: Response, next: NextFunction) => {
   return res.status(200).json({ message: "success" });
 };
-export default { getRooms, addRoom, editRoom };
+
+const removeRoom = async (req: Request, res: Response, next: NextFunction) => {
+  return res.status(200).json({ message: "success" });
+};
+
+export default { getRooms, addRoom, editRoom, removeRoom };
