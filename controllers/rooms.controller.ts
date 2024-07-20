@@ -17,8 +17,16 @@ const removeRoom = async (req: Request, res: Response, next: NextFunction) => {
   return res.status(200).json({ message: "success" });
 };
 
-const getRoom = async (req: Request, res: Response, next: NextFunction) => {
+const getRoomByID = async (req: Request, res: Response, next: NextFunction) => {
   return res.status(200).json({ message: "success" });
 };
 
-export default { getRooms, addRoom, editRoom, removeRoom, getRoom };
+const getRoomByBeads = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  return res.status(200).json({ message: "success" });
+};
+
+export default { getRooms, addRoom, editRoom, removeRoom, getRoomByID };
