@@ -8,5 +8,6 @@ router.post("/", (req: Request, res: Response) => {
 });
 
 router.get("/rooms", roomsController.getRooms);
+router.put("/edit/:id", roomsController.editRoom);
 
 export default router;
