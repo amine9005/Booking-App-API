@@ -10,5 +10,6 @@ router.post("/", (req: Request, res: Response) => {
 router.get("/rooms", roomsController.getRooms);
 router.put("/edit/:id", roomsController.editRoom);
 router.delete("/remove/:id", roomsController.removeRoom);
+router.post("/add", roomsController.addRoom);
 
 export default router;
