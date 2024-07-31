@@ -12,5 +12,6 @@ router.put("/edit/:id", roomsController.editRoom);
 router.delete("/remove/:id", roomsController.removeRoom);
 router.post("/add", roomsController.addRoom);
 router.post("/getById/:id", roomsController.getRoomByID);
+router.post("/getByStatus/:status", roomsController.getRoomByStatus);
 
 export default router;
