@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import mongoose from "mongoose";
 
 const login = async (req: Request, res: Response, next: NextFunction) => {
+  const { email, password } = req.body;
   return res.status(200).json({ message: "success" });
 };
 
